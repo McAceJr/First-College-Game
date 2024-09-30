@@ -1,10 +1,10 @@
 # Unity WebGL CI/CD with GitHub Actions
 
-WebGL published here (EDIT IT!) https://YOUR_GH_USERNAME.github.io/YOUR_REPO_NAME/
+WebGL published here (EDIT IT!) https://McAceJr.github.io/First-College-Game/
 
 # Setup Steps:
 
-- [ ] I understand FERPA laws. If I make the repository public, I will remove any student information, or I am waiving the requirement to remove student information. Otherwise, I am making the repository private;
+- [x] I understand FERPA laws. If I make the repository public, I will remove any student information, or I am waiving the requirement to remove student information. Otherwise, I am making the repository private;
 - [ ] I have forked the repository to my own GitHub account;
 - [ ] I have edited the README.md file to include my own information on the url for the web build;
 - [ ] I have followed the instructions to activate my personal licence here: https://game.ci/docs/github/activation/ ;
