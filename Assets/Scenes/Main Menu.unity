@@ -134,6 +134,8 @@ GameObject:
   - component: {fileID: 286897122}
   - component: {fileID: 286897121}
   - component: {fileID: 286897120}
+  - component: {fileID: 286897123}
+  - component: {fileID: 286897124}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -158,7 +160,7 @@ Camera:
   m_GameObject: {fileID: 286897119}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -207,6 +209,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!45 &286897123
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286897119}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: d7fad5c369ea8d14eb4385cc16ca0f29, type: 2}
+--- !u!114 &286897124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286897119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13cbca5986fa11b419416293e5919dca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &405123009
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,6 +336,7 @@ GameObject:
   - component: {fileID: 410694873}
   - component: {fileID: 410694872}
   - component: {fileID: 410694871}
+  - component: {fileID: 410694874}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -384,7 +408,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 410694872}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 410694874}
+        m_TargetAssemblyTypeName: MainMenuUI, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &410694872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -423,6 +459,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410694869}
   m_CullTransparentMesh: 1
+--- !u!114 &410694874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410694869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2af073d60c82d4795620440881561d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &473314214
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,12 +519,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.264
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -538,6 +586,7 @@ GameObject:
   - component: {fileID: 630665672}
   - component: {fileID: 630665671}
   - component: {fileID: 630665670}
+  - component: {fileID: 630665673}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -609,7 +658,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 630665671}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 630665673}
+        m_TargetAssemblyTypeName: MainMenuUI, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &630665671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -648,6 +709,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 630665668}
   m_CullTransparentMesh: 1
+--- !u!114 &630665673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630665668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2af073d60c82d4795620440881561d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &670001399
 GameObject:
   m_ObjectHideFlags: 0
